@@ -1,0 +1,9 @@
+langchain==0.3.62
+langgraph==0.4.7
+langchain-openai==0.3.18
+langchain-google-genai==2.1.4
+langchain-groq==0.3.2
+google-genai==1.16.1
+duckduckgo-search==8.0.2
+google-api-python-client==2.170.0
+pydantic_settings==2.9.1
