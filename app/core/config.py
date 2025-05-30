@@ -14,4 +14,9 @@ class Settings(BaseSettings):
     SEARCH_ENGINE_IDENTIFIER: str
     YOUTUBE_API_KEY: str
 
+    GOOGLE_SEARCH_RESULTS: int = 20
+    YOUTUBE_SEARCH_RESULTS: int = 20
+    DDG_SEARCH_RESULTS: int = 20
+
+
 settings = Settings()
