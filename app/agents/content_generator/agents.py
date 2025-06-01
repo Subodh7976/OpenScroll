@@ -87,7 +87,7 @@ class ResearchRefineAgent:
         messages = [
             self.system_message,
             HumanMessage(
-                content=f"**Title:**\n{title}\n**Breakdown:**\n{topic_breakdown}\nNow use the necessary tools, gather the context, refine and generate the final structured response.")
+                content=f"**Article Title:**\n{title}\n**Article Breakdown:**\n{topic_breakdown}\nNow use the necessary tools, gather the context, refine and generate the final structured response.")
         ]
 
         iterations = 0
@@ -145,8 +145,6 @@ prompt = PromptTemplate(
 summarizer_chain = prompt | llm
 
 # Planner agent
-
-
 class Section(BaseModel):
     title: str = Field(description="Title of the section")
     description: str = Field(
@@ -233,7 +231,7 @@ class WriterAgent:
         messages = [
             self.system_message,
             HumanMessage(
-                content=f"**Article Title:** {article_title}\n**Section Title:** {section_title}\n**Section Description:** {section_description}\n**Research Context:**\n{context}Now use the necessary tools, the context and generate the final response.")
+                content=f"**Article Title:** {article_title}\n**Section Title:** {section_title}\n**Section Description:** {section_description}\n**Research Context:**\n```text\n{context}\n```\n**Now, write the content for the specified section, adhering to all instructions.**")
         ]
 
         iterations = 0
