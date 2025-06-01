@@ -8,3 +8,7 @@ google-genai==1.16.1
 duckduckgo-search==8.0.2
 google-api-python-client==2.170.0
 pydantic_settings==2.9.1
+Wikipedia-API==0.8.1
+markdownify==1.1.0
+playwright==1.52.0
+# playwright install

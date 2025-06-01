@@ -1,0 +1,23 @@
+RESEARCH_REFINE_PROMPT = """
+
+"""
+
+SUMMARIZER_PROMPT = """
+
+"""
+
+PLANNER_PROMPT = """
+
+"""
+
+SECTION_WRITER_PROMPT = """
+
+"""
+
+INTRO_CONCLUSION_PROMPT = """
+
+"""
+
+CONCISE_CONTENT_PROMPT = """
+
+"""

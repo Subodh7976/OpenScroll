@@ -8,6 +8,7 @@ import json
 from services.duckduckgo import make_text_request
 from services.google import google_search
 from services.youtube import search_youtube
+from models import StreamingUpdate
 from core.config import settings
 from .agents import *
 
@@ -16,11 +17,6 @@ TRAVERSAL_NODE = "traversal"
 RESEARCH_NODE = "research"
 TOPIC_NODE = "topic"
 CREATIVE_NODE = "creative"
-
-
-class StreamingUpdate(BaseModel):
-    node: str
-    update: str
 
 
 class ResearchContext(BaseModel):
